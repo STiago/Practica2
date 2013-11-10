@@ -12,10 +12,3 @@ En primer lugarcreamos las carpetas y cambiamos el propietario a root, luego cre
 ![Practica2](https://dl.dropbox.com/s/qwjy488qmrzglq7/pract2IV.png)
 
 Con ello tendriamos creada la jaula. Ahora procedemos a instalar los paquetes, bibliotecas y demás para que la aplicación funcione.
-Entramos con chroot e instalamos en nuestro caso python 2.7 que es el lenguage en el que está realizada la aplicación.
-
-![Practica2](https://dl.dropbox.com/s/b1kg8k3ijwy7qu2/p2iv1.png)
-
-
-De la siguiente forma procedemos a crear el usuario en la jaula con la contraseña:
-![Practica2](https://dl.dropbox.com/s/uc17zky8008baup/user.png)
