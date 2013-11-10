@@ -3,5 +3,9 @@ Practica 2 Copyright (C) 2013 María Victoria Santiago Alcalá. This program is 
 Practica2
 =========
 ### INTRODUCCION
-En esta práctica vamos a crear una aplicación web simple y la vamos a aislar en una jaula chroot con una distribución de Ubuntu.
+En esta práctica vamos a crear una aplicación web simple y la vamos a aislar en una jaula chroot con Ubuntu 13.10.
 Para ello, lo instalaremos todo con permisos de superusuario para no tener problemas.
+
+### Creación de la jaula
+En primer lugarcreamos las carpetas y cambiamos el propietario a root, luego creamos la jaula como se muestra a continuacion en el siguiente volcado de pantalla:
+![ejercicio1](https://dl.dropbox.com/s/qwjy488qmrzglq7/pract2IV.png)
