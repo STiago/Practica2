@@ -94,6 +94,7 @@ Ejemplo de registrar datos:
 
 ![Practica2](https://dl.dropbox.com/s/ihk4s6vtrh1ophb/algo12fin.png)
 
+
 Ejemplo de mostar los datos registrados anteriormente:
 
 ![Practica2](https://dl.dropbox.com/s/fv3msk2riupvm23/algo13fin.png)
