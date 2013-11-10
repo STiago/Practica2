@@ -27,5 +27,5 @@ A continuación, creamos el usuario con adduser seguido del nombre que le queram
 ![Practica2](https://dl.dropbox.com/s/ftbvvbfmoxncqch/algo3usuario.png)
 
 Ahora, vamos al fichero de configuración para asegurar que a la jaula solo acceden el usuario que acabamos de crear y el root.
-
+A continuación en el siguiente volcado de pantalla muestro el fichero de configuración de wheezy en el cual e introducido en el campo user el nombre de mi usuario creado anterior mente, en mi caso "pepe"
 ![Practica2](https://dl.dropbox.com/s/960e0o1shi1hvrz/algo4config.png)
