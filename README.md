@@ -40,10 +40,18 @@ Para ver que todo lo realizado se ha aplicado correctamente, accedemos a la jaul
 
 Realizado todo lo anterior, procedemos a instalar todos los paquetes y bibliotecas necesarias para el funcionamiento de nuestra aplicación web en nuestro sistema.
 
-Primero montamos los sistemas de ficheros proc y devpts con "mount -t proc proc /proc", "mount devpts /dev/pts -t devpts" e instalamos python 2.7 con "apt-get install python" como se muestra a continuación:
+Primero montamos los sistemas de ficheros proc y devpts con "mount -t proc proc /proc", "mount devpts /dev/pts -t devpts" e instalamos python 2.7 con "apt-get install python" y mako como se muestra a continuación:
 
 ![Practica2](https://dl.dropbox.com/s/4c0r0e6a3nfe7sy/algo6montareinstallpython.png)
+![Practica2](https://dl.dropbox.com/s/21mch6fnvugaxvd/algo7installmako.png)
 
+
+Tras realizar lo anterior sin fallos, vamos al siguiente paso. Instalar el paquete “python-web2py" desde el repositorio d GitHub, para ello deberemos de instalar en nuestro sistema git
+![Practica2](https://dl.dropbox.com/s/lcxbw361s754iea/algo8installgithubywebpy.png)
+
+Finalizado todo lo anterior, procedemos a copiar desde nuestra máquina anfitriona (la cual contiene el directorio con los ficheros de la aplicación) la aplicación a nuestra jaula.
+
+![Practica2](https://dl.dropbox.com/s/4k8xvd8gl4uksz8/algo9practicadentro.png)
 
 
 
