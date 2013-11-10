@@ -46,6 +46,7 @@ Primero montamos los sistemas de ficheros proc y devpts con "mount -t proc proc 
 ![Practica2](https://dl.dropbox.com/s/21mch6fnvugaxvd/algo7installmako.png)
 
 
+
 Tras realizar lo anterior sin fallos, vamos al siguiente paso. Instalar el paquete “python-web2py" desde el repositorio d GitHub, para ello deberemos de instalar en nuestro sistema git
 Lineas de comandos necesarias:
 
@@ -57,16 +58,45 @@ cd webpy/
 
 python setup.py install
 
+
 ![Practica2](https://dl.dropbox.com/s/lcxbw361s754iea/algo8installgithubywebpy.png)
+
 
 
 Finalizado todo lo anterior, procedemos a copiar desde nuestra máquina anfitriona (la cual contiene el directorio con los ficheros de la aplicación) la aplicación a nuestra jaula.
 El comando para copiar el directorio de la aplicación a nuestra jaula es:
+
 sudo cp -r ./p2-iv/ /seguro/jaulas/p2/home/
 
 ![Practica2](https://dl.dropbox.com/s/4k8xvd8gl4uksz8/algo9practicadentro.png)
 
 
+
+Tras realizar la copia correctamente, procedemos a lanzar la aplicación. Para lanzarla debemos de ejecutar en consola lo siguiente:
+
+python pract2.py 1111
+
+siendo 1111 el puerto en el que se va a lanzar, aunque puede ser cualquier otro. Es importante saber que si no se le da puerto, por defecto coge el 8080 y este, puede darnos problemas puesto que puede estar ocupado por el apache.
+
+A continuación muestro con capturas el funcionamiento de la aplicación de la jaula en el navegador, introduciendo en el "http://0.0.0.0:1111" :
+
+![Practica2](https://dl.dropbox.com/s/a2l91xyzc6anlhb/algo10fin.png)
+
+La captura anterior es la correspondiente al inicio de sesion en la cual se introduce el nombre del usuario y la contraseña se corresponde con el mismo nombre de usuario seguido del numero tres.
+Por ejemplo: 
+
+    Usuario: victoria
+    Contraseña: victoria3
+    
+Y con ello iniciaría la sesion y entraríamos en la página principal donde podemos registrar nuestros datos en un formulario, mostrarlos y modificarlos a nuestro gusto.
+
+Ejemplo de registrar datos:
+
+![Practica2](https://dl.dropbox.com/s/ihk4s6vtrh1ophb/algo12fin.png)
+
+Ejemplo de mostar los datos registrados anteriormente:
+
+![Practica2](https://dl.dropbox.com/s/fv3msk2riupvm23/algo13fin.png)
 
 
 
