@@ -1,0 +1,16 @@
+## -*- coding: utf-8 -*-
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	<title>DAI</title>
+</head>
+<body>
+	<img src="/static/logo.jpeg" alt = "ETSIIT">
+   <h1>Practica Python</h1>
+		% if usuario:
+			<p>Bienvenido: <b>${usuario}</b></p>
+		% endif	
+
+
+

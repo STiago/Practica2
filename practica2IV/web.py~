@@ -1,0 +1,38 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import web
+from web import form
+        
+urls = (
+    '/(.*)', 'fractal'
+)
+app = web.application(urls, globals())
+plantilla= web.template.render('./templates/')
+
+
+formulario = form.Form(
+	form.Textbox("Nombre"),
+	form.Textbox("Otro")
+)
+
+#class hello:        
+ #   def GET(self, name):
+ #       if not name: 
+  #          name = 'Desarrollo de aplicaciones para internet'
+   #     return 'Practica 2 - ' + name + '!'
+
+
+
+class hello:        
+    def GET(self):
+        return '<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"<title>practica2</title></head><body><img src="file:///home/victoria/webpy/static/alhambra7.jpg" alt="imagen"/></body></html>' 
+
+class fractal:
+    def GET(self):
+    	form= formulario()
+	return plantilla.formulario(form)
+
+
+if __name__ == "__main__":
+    app.run()

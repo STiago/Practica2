@@ -1,0 +1,56 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Iteraciones
+ITERACIONES = 100
+
+# Densidad de la cuadricula
+DENSIDAD = 700
+
+# Rango de dibujo aconsejable
+#x_min, x_max = -2.5, 1
+#y_min, y_max = -1.5, 1.5
+
+print "Introduce las coordenadas para visualizar el dibujo "
+
+x_min = float(raw_input("Coordenada X minima: "))
+x_max = float(raw_input("Coordenada X maxima: "))
+y_min = float(raw_input("Coordenada Y minima: "))
+y_max = float(raw_input("Coordenada Y maxima: "))
+
+# Cuadricula uniforme
+x, y = np.meshgrid(np.linspace(x_min, x_max, DENSIDAD),
+                   np.linspace(y_min, y_max, DENSIDAD))
+
+# Funcion de recurrencia para el conjunto de mandelbrot
+def znn(z, cc):
+        return z**2 + cc
+
+c = x + 1j*y # Cuadricula compleja
+z = c.copy()
+fractal = np.zeros(z.shape, dtype=np.uint8) + 255 # Color inicial (lo que no pertenece al fractal)
+
+# Iterar
+for n in range(ITERACIONES):
+        print "Iteracion: " + str(n)
+
+        # Se actualiza z recursivamente
+        z = znn(z, c)
+
+        # Mascara
+        mask = (np.abs(z) > 2)
+
+        # Actualizar el color del fractal
+        # Color depende de la iteracion actual
+        fractal[mask] =  255 *  (n / float(ITERACIONES))
+
+# Mostrar la imagen usando como pixeles el fractal y mapa de colores "hot"
+plt.imshow(np.log(fractal), cmap=plt.cm.hot, extent=(x_min, x_max, y_min, y_max))
+plt.title('Conjunto de Mandelbrot')
+plt.xlabel('Re(z)')
+plt.ylabel('Im(z)')
+
+plt.show()

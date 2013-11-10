@@ -1,0 +1,13 @@
+## -*- coding: utf-8 -*-
+
+<%include file="header.html"/>
+
+<a href="/formulario3">Inicio</a>
+
+
+<br/><br/> o <a href="/logout">logout</a>
+
+
+
+</body>
+</html>
