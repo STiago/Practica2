@@ -59,9 +59,13 @@ python setup.py install
 
 ![Practica2](https://dl.dropbox.com/s/lcxbw361s754iea/algo8installgithubywebpy.png)
 
+
 Finalizado todo lo anterior, procedemos a copiar desde nuestra máquina anfitriona (la cual contiene el directorio con los ficheros de la aplicación) la aplicación a nuestra jaula.
+El comando para copiar el directorio de la aplicación a nuestra jaula es:
+sudo cp -r ./p2-iv/ /seguro/jaulas/p2/home/
 
 ![Practica2](https://dl.dropbox.com/s/4k8xvd8gl4uksz8/algo9practicadentro.png)
+
 
 
 
