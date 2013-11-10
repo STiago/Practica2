@@ -12,10 +12,20 @@ El template usado en la aplicación es una plantilla gratuita descargada de la s
 http://www.freewebsitetemplates.com/
 
 ### Creación de la jaula
-En primer lugarcreamos las carpetas y cambiamos el propietario a root, luego creamos la jaula como se muestra a continuacion en el siguiente volcado de pantalla:
+En primer lugar instalamos el sistema operativo y lo aislamos en una jaula con la linea de comandos siguiente:
+sudo debootstrap --arch=i386 wheezy /seguro/jaulas/p2 http://ftp.us.debian.org/debian
 
-sudo chroot /home/jaulas/quantal
-![Practica2](https://dl.dropbox.com/s/qwjy488qmrzglq7/pract2IV.png)
+![Practica2](https://dl.dropbox.com/s/et14umdakwmx2bb/algo1.png)
 
-Con ello tendriamos creada la jaula. Ahora procedemos a entrar con chroot.
+Con ello tendriamos creada la jaula. 
 
+Tras realizar la instalación del sistema hacemos un chroot para accecer a la jaula y comprobar que esta todo correcto como muestra la siguiente captura.
+![Practica2](https://dl.dropbox.com/s/poz0wxkew2bfekc/algo2.png)
+
+A continuación, creamos el usuario con adduser seguido del nombre que le queramos dar al usuario y una vez ahi, introducimos sus datos (opcional) y la contraseña con su correspondiente confirmación.
+
+![Practica2](https://dl.dropbox.com/s/ftbvvbfmoxncqch/algo3usuario.png)
+
+Ahora, vamos al fichero de configuración para asegurar que a la jaula solo acceden el usuario que acabamos de crear y el root.
+
+![Practica2](https://dl.dropbox.com/s/960e0o1shi1hvrz/algo4config.png)
