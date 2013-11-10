@@ -18,3 +18,6 @@ Con ello tendriamos creada la jaula. Ahora procedemos a entrar con chroot.
 Realizamos el montaje y procedemos a instalar los paquetes, bibliotecas y demás para que la aplicación funcione.
 
 ![Practica2](https://dl.dropbox.com/s/b7si7w1d1p7p9as/mont.png)
+
+Al hacer ifconfig muestra:
+![Practica2](https://dl.dropbox.com/s/423knb1ci2am4qn/ifcon.png)
