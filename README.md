@@ -26,6 +26,30 @@ A continuación, creamos el usuario con adduser seguido del nombre que le queram
 
 ![Practica2](https://dl.dropbox.com/s/ftbvvbfmoxncqch/algo3usuario.png)
 
+
 Ahora, vamos al fichero de configuración para asegurar que a la jaula solo acceden el usuario que acabamos de crear y el root.
 A continuación en el siguiente volcado de pantalla muestro el fichero de configuración de wheezy en el cual e introducido en el campo user el nombre de mi usuario creado anterior mente, en mi caso "pepe"
+
 ![Practica2](https://dl.dropbox.com/s/960e0o1shi1hvrz/algo4config.png)
+
+
+Para ver que todo lo realizado se ha aplicado correctamente, accedemos a la jaula con nuestro usuario haciendo lo siguiente:
+
+![Practica2](https://dl.dropbox.com/s/leirtk2bep507uh/algo5pruebadeloanterior.png)
+
+
+Realizado todo lo anterior, procedemos a instalar todos los paquetes y bibliotecas necesarias para el funcionamiento de nuestra aplicación web en nuestro sistema.
+
+Primero montamos los sistemas de ficheros proc y devpts con "mount -t proc proc /proc", "mount devpts /dev/pts -t devpts" e instalamos python 2.7 con "apt-get install python" como se muestra a continuación:
+
+![Practica2](https://dl.dropbox.com/s/4c0r0e6a3nfe7sy/algo6montareinstallpython.png)
+
+
+
+
+
+
+
+
+
+
