@@ -47,6 +47,13 @@ Primero montamos los sistemas de ficheros proc y devpts con "mount -t proc proc 
 
 
 Tras realizar lo anterior sin fallos, vamos al siguiente paso. Instalar el paquete “python-web2py" desde el repositorio d GitHub, para ello deberemos de instalar en nuestro sistema git
+Lineas de comandos necesarias:
+
+apt-get install git
+git clone git://github.com/webpy/webpy.git
+cd webpy/
+python setup.py install
+
 ![Practica2](https://dl.dropbox.com/s/lcxbw361s754iea/algo8installgithubywebpy.png)
 
 Finalizado todo lo anterior, procedemos a copiar desde nuestra máquina anfitriona (la cual contiene el directorio con los ficheros de la aplicación) la aplicación a nuestra jaula.
