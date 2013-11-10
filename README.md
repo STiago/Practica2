@@ -20,6 +20,8 @@ Realizamos el montaje y procedemos a instalar los paquetes, bibliotecas y demás
 
 ![Practica2](https://dl.dropbox.com/s/b7si7w1d1p7p9as/mont.png)
 
+![Practica2](https://dl.dropbox.com/s/j973dcfenj0wy0k/bien1.png)
+
 Al hacer ifconfig de nuestra jaula muestra:
 ![Practica2](https://dl.dropbox.com/s/423knb1ci2am4qn/ifcon.png)
 
