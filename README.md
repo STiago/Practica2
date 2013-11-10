@@ -6,6 +6,11 @@ Practica2
 En esta práctica vamos a crear una aplicación web simple y la vamos a aislar en una jaula chroot con Ubuntu 13.10.
 Para ello, lo instalaremos todo con permisos de superusuario para no tener problemas.
 
+###Nota
+El template usado en la aplicación es una plantilla gratuita descargada de la siguente página:
+
+http://www.freewebsitetemplates.com/
+
 ### Creación de la jaula
 En primer lugarcreamos las carpetas y cambiamos el propietario a root, luego creamos la jaula como se muestra a continuacion en el siguiente volcado de pantalla:
 
