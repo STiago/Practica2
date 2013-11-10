@@ -9,6 +9,7 @@ Para ello, lo instalaremos todo con permisos de superusuario para no tener probl
 ### Creación de la jaula
 En primer lugarcreamos las carpetas y cambiamos el propietario a root, luego creamos la jaula como se muestra a continuacion en el siguiente volcado de pantalla:
 
+sudo chroot /home/jaulas/quantal
 ![Practica2](https://dl.dropbox.com/s/qwjy488qmrzglq7/pract2IV.png)
 
 Con ello tendriamos creada la jaula. Ahora procedemos a entrar con chroot.
@@ -22,5 +23,5 @@ Realizamos el montaje y procedemos a instalar los paquetes, bibliotecas y demás
 Al hacer ifconfig de nuestra jaula muestra:
 ![Practica2](https://dl.dropbox.com/s/423knb1ci2am4qn/ifcon.png)
 
-Instalamos apache como muestran las siguientes capturas:
+Instalamos php como muestran las siguientes capturas:
 ![Practica2](https://dl.dropbox.com/s/edgyg8nhhxtz0b0/php.png)
