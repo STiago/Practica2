@@ -11,4 +11,10 @@ En primer lugarcreamos las carpetas y cambiamos el propietario a root, luego cre
 
 ![Practica2](https://dl.dropbox.com/s/qwjy488qmrzglq7/pract2IV.png)
 
-Con ello tendriamos creada la jaula. Ahora procedemos a instalar los paquetes, bibliotecas y demás para que la aplicación funcione.
+Con ello tendriamos creada la jaula. Ahora procedemos a entrar con chroot.
+
+![Practica2](https://dl.dropbox.com/s/7dh85mi7hwz90tp/1.png)
+
+Realizamos el montaje y procedemos a instalar los paquetes, bibliotecas y demás para que la aplicación funcione.
+
+![Practica2](https://dl.dropbox.com/s/b7si7w1d1p7p9as/mont.png)
