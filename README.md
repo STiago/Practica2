@@ -50,8 +50,11 @@ Tras realizar lo anterior sin fallos, vamos al siguiente paso. Instalar el paque
 Lineas de comandos necesarias:
 
 apt-get install git
+
 git clone git://github.com/webpy/webpy.git
+
 cd webpy/
+
 python setup.py install
 
 ![Practica2](https://dl.dropbox.com/s/lcxbw361s754iea/algo8installgithubywebpy.png)
