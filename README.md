@@ -1,9 +1,9 @@
 Practica 2 Copyright (C) 2013 María Victoria Santiago Alcalá. This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see .
 
-Practica2
+Practica2. Aislamiento de una aplicación web usando una jaula chroot
 =========
 ### INTRODUCCION
-En esta práctica vamos a crear una aplicación web simple y la vamos a aislar en una jaula chroot con Ubuntu 13.10.
+En esta práctica vamos a crear una aplicación web en Python de una pagina web donde se pueden registrar usuarios, modificar y visualizar sus datos. Seguidamente vamos a aislar dicha aplicación en una jaula chroot con Wheezy.
 Para ello, lo instalaremos todo con permisos de superusuario para no tener problemas.
 
 ###Nota
@@ -19,16 +19,3 @@ sudo chroot /home/jaulas/quantal
 
 Con ello tendriamos creada la jaula. Ahora procedemos a entrar con chroot.
 
-![Practica2](https://dl.dropbox.com/s/7dh85mi7hwz90tp/1.png)
-
-Realizamos el montaje y procedemos a instalar los paquetes, bibliotecas y demás para que la aplicación funcione.
-
-![Practica2](https://dl.dropbox.com/s/b7si7w1d1p7p9as/mont.png)
-
-![Practica2](https://dl.dropbox.com/s/j973dcfenj0wy0k/bien1.png)
-
-Al hacer ifconfig de nuestra jaula muestra:
-![Practica2](https://dl.dropbox.com/s/423knb1ci2am4qn/ifcon.png)
-
-Instalamos php como muestran las siguientes capturas:
-![Practica2](https://dl.dropbox.com/s/edgyg8nhhxtz0b0/php.png)
