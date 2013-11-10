@@ -8,4 +8,4 @@ Para ello, lo instalaremos todo con permisos de superusuario para no tener probl
 
 ### Creación de la jaula
 En primer lugarcreamos las carpetas y cambiamos el propietario a root, luego creamos la jaula como se muestra a continuacion en el siguiente volcado de pantalla:
-![ejercicio1](https://dl.dropbox.com/s/qwjy488qmrzglq7/pract2IV.png)
+![Practica2](https://dl.dropbox.com/s/qwjy488qmrzglq7/pract2IV.png)
